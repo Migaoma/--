@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">青年导航</div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#tiantitu">天梯图</a></li>
+                <li><a href="#download">下载</a></li>
+                <li><a href="#about">关于</a></li>
+            </ul>
+            <button class="login-btn">登录</button>
+            <button class="mode-toggle">
+                <span class="icon sun-icon">
+                    <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="15" fill="#f8e71c" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24 39V44" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M39 23H44" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 23H9" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24 4V9" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M34.6064 34.6064L38.142 38.142" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33.8994 12.6865L37.4349 9.15099" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.15088 37.4351L12.6864 33.8995" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.85791 9.85791L13.3934 13.3934" stroke="#f5a623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="icon moon-icon" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.0527 4.41085C22.5828 5.83695 18.5455 10.8106 18.5455 16.7273C18.5455 23.7564 24.2436 29.4545 31.2727 29.4545C37.1894 29.4545 42.1631 25.4172 43.5891 19.9473C43.8585 21.256 44 22.6115 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C25.3885 4 26.744 4.14149 28.0527 4.41085Z" fill="#f8e71c" stroke="#f5a623" stroke-width="4" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </button>
+        </nav>
+    
+        <!-- 登录模态框 -->
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>登录</h2>
+                <form id="loginForm">
+                    <label for="username"><b>邮箱</b></label>
+                    <input type="text" placeholder="请输入邮箱" name="username" required>
+                    <label for="password"><b>密码</b></label>
+                    <input type="password" placeholder="请输入密码" name="password" required>
+                    <button type="submit">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
